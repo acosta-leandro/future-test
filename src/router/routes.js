@@ -1,9 +1,11 @@
 const routes = [
   {
-    path: '/',
+    path: '/future',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/IndexPage.vue') }
+      { path: '', component: () => import('pages/IndexPage.vue') },
+      { path: 'a', component: () => import('pages/A.vue') },
+      { path: 'b', component: () => import('pages/B.vue') },
     ]
   },
 
