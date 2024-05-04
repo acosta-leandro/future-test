@@ -25,6 +25,6 @@ jobs:
           repo_token: "${{ secrets.ACTIONS }}"
           # This is how you access the exposed version
           automatic_release_tag: "${{ steps.project-version.outputs.version }}"
-          title: "Deploy"
+          title: "${{ steps.project-version.outputs.version }}"
           files: |
             backend.tar.gz
