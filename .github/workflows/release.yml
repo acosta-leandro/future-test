@@ -16,7 +16,7 @@ jobs:
         id: project-version
         uses: 'euberdeveloper/ga-project-version@main'
         with:
-          package-manager: 'composer'
+          package-manager: 'npm'
 
       # In this step the exposed version is used as tag of a github release to publish
       - name: Add release
