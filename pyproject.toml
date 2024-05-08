@@ -1,1 +1,4 @@
+[tool.poetry]
+name = "poetry-demo"
 version = "0.1.0"
+description = ""
